@@ -1,0 +1,10 @@
+Windows Registry Editor 5.00
+[HKEY_CLASSES_ROOT\CLSID\{A35D4F8D-47DD-437a-B174-3F7EAA704F26}]
+@="OuterComponentDll_WithRegFile"
+[HKEY_CLASSES_ROOT\CLSID\{A35D4F8D-47DD-437a-B174-3F7EAA704F26}\InprocServer32]
+@="E:\Saikrishna\Astromedicomp\WinDev Programs\02-COM\02-Containtment\01-ContainmentDllServerWithRegFile\ContainmentOuterComponentWithRegFile\ContainmentOuterComponentWithRegFile.dll"
+
+[HKEY_CLASSES_ROOT\CLSID\{066C297E-6927-44f9-8838-E47F2900B571}]
+@="InnerComponentDll_WithRegFile"
+[HKEY_CLASSES_ROOT\CLSID\{066C297E-6927-44f9-8838-E47F2900B571}\InprocServer32]
+@="E:\Saikrishna\Astromedicomp\WinDev Programs\02-COM\02-Containtment\01-ContainmentDllServerWithRegFile\ContainmentInnerComponentWithRegFile\ContainmentInnerComponentWithRegFile.dll"
