@@ -1,0 +1,9 @@
+Windows Registry Editor Version 5.00
+[HKEY_CLASSES_ROOT\CLSID\{249477C9-92A4-4559-BDA3-55D7F5E7E15A}]
+@="My Aggregation Inner Component DLL"
+[HKEY_CLASSES_ROOT\CLSID\{249477C9-92A4-4559-BDA3-55D7F5E7E15A}\InprocServer32]
+@="C:\\Windows\\System32\\AggregationInnerComponentWithRegFile.dll"
+[HKEY_CLASSES_ROOT\CLSID\{A35D4F8D-47DD-437a-B174-3F7EAA704F26}]
+@="My Aggregation Outer Component DLL"
+[HKEY_CLASSES_ROOT\CLSID\{A35D4F8D-47DD-437a-B174-3F7EAA704F26}\InprocServer32]
+@="C:\\Windows\\System32\\AggregationOuterComponentWithRegFile.dll"

@@ -1,0 +1,34 @@
+import "unknwn.idl";
+//IAutomationFileWriter
+[
+	object,
+	uuid(F5BDE086-36D5-4d01-99B8-2D4882D90DB6),
+	helpstring("IAutomationFileWriter interface"),
+	pointer_default(unique),
+	dual, // Because IAutomationFileWriter supports IClassFactory and IDispatch both
+	oleautomation
+]
+interface IAutomationFileWriter : IDispatch
+{
+	import "oaidl.idl";
+	HRESULT WriteIntoFile([in] BSTR, [in] BSTR);
+};
+// Actual TypeLib Related Code
+[
+	uuid(6EB2D557-8EEF-4cb9-A8C5-D5A48670A6C0),
+	version(1.0),
+	helpstring("AutomationFileWriter Component's Type Library")
+]
+library AutomationServerTypeLib
+{
+	importlib("stdole32.tlb");
+	// Component code
+	[
+		uuid(A5F85CE7-D53F-4c66-93D9-00743A87D188),
+		helpstring("AutomationFileWriter Component Class")
+	]
+	coclass CAutomationFileWriter
+	{
+		[default] interface IAutomationFileWriter;
+	};
+};

@@ -1,0 +1,53 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 14.29.30145.0 (3a4454c8).
+//
+// E:\Saikrishna\Astromedicomp\WinDev Programs\Project\DataEntryDialogClient\dotnetserverforfileinput.tlh
+//
+// C++ source equivalent of type library DotNetServerForFileInput.tlb
+// compiler-generated file created 01/15/23 at 11:40:10 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("0732a368-ddc1-3dbf-9f89-84e2e59b9b4f"))
+/* LIBID */ __DotNetServerForFileInput;
+struct /* coclass */ DotNetServerForInput;
+struct __declspec(uuid("173b25ad-6ed0-33f2-99a2-ef6d69444784"))
+/* dual interface */ _DotNetServerForInput;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(_DotNetServerForInput, __uuidof(_DotNetServerForInput));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("0d400ff3-b734-3ed1-ac89-af63f9842184"))
+DotNetServerForInput;
+    // [ default ] interface _DotNetServerForInput
+    // interface _Object
+
+struct __declspec(uuid("173b25ad-6ed0-33f2-99a2-ef6d69444784"))
+_DotNetServerForInput : IDispatch
+{};
+
+//
+// Named GUID constants initializations
+//
+
+extern "C" const GUID __declspec(selectany) LIBID_DotNetServerForFileInput =
+    {0x0732a368,0xddc1,0x3dbf,{0x9f,0x89,0x84,0xe2,0xe5,0x9b,0x9b,0x4f}};
+extern "C" const GUID __declspec(selectany) CLSID_DotNetServerForInput =
+    {0x0d400ff3,0xb734,0x3ed1,{0xac,0x89,0xaf,0x63,0xf9,0x84,0x21,0x84}};
+extern "C" const GUID __declspec(selectany) IID__DotNetServerForInput =
+    {0x173b25ad,0x6ed0,0x33f2,{0x99,0xa2,0xef,0x6d,0x69,0x44,0x47,0x84}};
+
+#pragma pack(pop)

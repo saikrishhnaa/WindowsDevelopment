@@ -1,0 +1,4 @@
+LIBRARY AutomationDllServerForFileOutput.dll
+EXPORTS 
+	DllGetClassObject PRIVATE
+	DllCanUnloadNow PRIVATE

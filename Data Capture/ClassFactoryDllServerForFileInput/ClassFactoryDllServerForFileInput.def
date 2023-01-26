@@ -1,0 +1,4 @@
+LIBRARY ClassFactoryDllServerForFileInput.dll
+EXPORTS
+	DllGetClassObject PRIVATE
+	DllCanUnloadNow PRIVATE

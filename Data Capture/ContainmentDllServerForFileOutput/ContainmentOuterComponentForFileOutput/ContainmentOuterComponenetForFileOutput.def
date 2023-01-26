@@ -1,0 +1,4 @@
+LIBRARY ContainmentOuterComponentForFileOutput
+EXPORTS
+	DllGetClassObject PRIVATE
+	DllCanUnloadNow PRIVATE

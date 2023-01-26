@@ -9,7 +9,7 @@ class IDivision :public IUnknown
 {
 public:
 	//Division specific method declarations pure virtual - {249477C9-92A4-4559-BDA3-55D7F5E7E15A}
-	virtual HRESULT __stdcall DivisionOfTwoIntegers(int, int, int*);
+	virtual HRESULT __stdcall DivisionOfTwoIntegers(int, int, int*) = 0;
 };
 
 // CLSID of MultiplicationDivision Component - {249477C9-92A4-4559-BDA3-55D7F5E7E15A}
@@ -20,7 +20,3 @@ const IID IID_IMultiplication = { 0xb8290b44, 0x470, 0x4aa3, 0x84, 0xaf, 0x11, 0
 
 // IID of IDivision Interface - {67A6093F-9450-4970-80E5-406D4DED2E0B}
 const IID IID_IDivision = { 0x67a6093f, 0x9450, 0x4970, 0x80, 0xe5, 0x40, 0x6d, 0x4d, 0xed, 0x2e, 0xb };
-
-// {BA478B39-6DAC-4099-8A38-D78571A799DC}
-//DEFINE_GUID(<< name >> ,
-//	0xba478b39, 0x6dac, 0x4099, 0x8a, 0x38, 0xd7, 0x85, 0x71, 0xa7, 0x99, 0xdc);

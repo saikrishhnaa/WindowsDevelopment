@@ -1,0 +1,10 @@
+Windows Registry Editor Version 5.00
+[HKEY_CLASSES_ROOT\CLSID\{DBD576C7-807F-47de-A418-55CC38474280}]
+@="Aggregation outer component Dll for file input"
+[HKEY_CLASSES_ROOT\CLSID\{DBD576C7-807F-47de-A418-55CC38474280}\InprocServer32]
+@="C:\\Windows\\System\\AggregationOuterComponentForFileInput.dll"
+
+[HKEY_CLASSES_ROOT\CLSID\{76A681F5-60EE-4ea6-8A2B-1A312A745C9F}]
+@="Aggregation inner component dll for file input"
+[HKEY_CLASSES_ROOT\CLSID\{76A681F5-60EE-4ea6-8A2B-1A312A745C9F}\InprocServer32]
+@="C:\\Windows\\System32\\AggregationInnerComponentForFileInput.dll"

@@ -1,0 +1,4 @@
+LIBRARY AggregationOuterComponentForFileInput
+EXPORTS
+	DllGetClassObject PRIVATE
+	DllCanUnloadNow PRIVATE

@@ -1,0 +1,5 @@
+Windows Registry Editor Version 5.00
+[HKEY_CLASSES_ROOT\CLSID\{A24C5F00-1A02-44b8-8E47-302ABF24FCC6}]
+@="Class Factory Dll Server For File Input"
+[HKEY_CLASSES_ROOT\CLSID\{A24C5F00-1A02-44b8-8E47-302ABF24FCC6}\InprocServer32]
+@="C:\\Windows\\System32\\ClassFactoryDllServerForFileInput.dll"

@@ -303,6 +303,7 @@ HRESULT CMyMath::GetTypeInfo(UINT iTypeInfo, LCID lcid, ITypeInfo** ppITypeInfo)
 	*ppITypeInfo = m_pITypeInfo;
 
 	return(S_OK);
+
 }
 
 HRESULT CMyMath::GetIDsOfNames(REFIID riid, LPOLESTR* rgszNames, UINT cNames, LCID lcid, DISPID* rgDispId)

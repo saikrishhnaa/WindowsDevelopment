@@ -68,10 +68,10 @@ BOOL WINAPI DllMain(HINSTANCE hDll, DWORD dwReason, LPVOID Reserved)
 	// code
 	switch (dwReason)
 	{
-	case DLL_PROCESS_ATTACH:
-		break;
-	case DLL_PROCESS_DETACH:
-		break;
+		case DLL_PROCESS_ATTACH:
+			break;
+		case DLL_PROCESS_DETACH:
+			break;
 	}
 	return(TRUE);
 }
@@ -118,7 +118,7 @@ HRESULT CMultiplicationDivision::QueryInterface_NoAggregation(REFIID riid, void*
 	else if (riid == IID_IMultiplication)
 		*ppv = static_cast<IMultiplication*>(this);
 	else if (riid == IID_IDivision)
-		*ppv = static_cast<IDivision>(this);
+		*ppv = static_cast<IDivision*>(this);
 	else
 	{
 		*ppv = NULL;
@@ -151,14 +151,14 @@ ULONG CMultiplicationDivision::Release_NoAggregation(void)
 // Implementation Of IMultiplication's Methods
 HRESULT CMultiplicationDivision::MultiplicationOfTwoIntegers(int num1, int num2, int *pMultiplication)
 {
-	*pMultiplication = num1 + num2;
+	*pMultiplication = num1 * num2;
 	return(S_OK);
 }
 
 // Implementation Of IDivision's Methods
 HRESULT CMultiplicationDivision::DivisionOfTwoIntegers(int num1, int num2, int* pDivision)
 {
-	*pDivision = num1 - num2;
+	*pDivision = num1 / num2;
 	return(S_OK);
 }
 
@@ -247,10 +247,11 @@ HRESULT CMultiplicationDivisionClassFactory::LockServer(BOOL fLock)
 }
 
 // Implementation Of Exported Functions From This Dll
-HRESULT __stdcall DllGetClassObject(REFCLSID rclsid, REFIID riid, void** ppv)
+extern "C" HRESULT __stdcall DllGetClassObject(REFCLSID rclsid, REFIID riid, void** ppv)
 {
 	// Variable Declarations
 	CMultiplicationDivisionClassFactory* pCMultiplicationDivisionClassFactory = NULL;
+	HRESULT hr;
 
 	if (rclsid != CLSID_MultiplicationDivision)
 		return(CLASS_E_CLASSNOTAVAILABLE);
@@ -269,7 +270,7 @@ HRESULT __stdcall DllGetClassObject(REFCLSID rclsid, REFIID riid, void** ppv)
 	return(hr);
 }
 
-HRESULT __stdcall DllCanUnloadNow(void)
+extern "C" HRESULT __stdcall DllCanUnloadNow(void)
 {
 	if ((glNumberOfActiveComponents == 0) && (glNumberOfServerLocks == 0))
 		return(TRUE);
